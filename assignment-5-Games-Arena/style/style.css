@@ -1,0 +1,696 @@
+/* Start Genaral Style */
+
+/* Headings Fonts */
+@font-face {
+    font-family: "Days One";
+    src: url(../fonts/Days_One/DaysOne-Regular.ttf);
+}
+/* Body Fonts */
+@font-face {
+    font-family: "Chakra Petch";
+    src: url(../fonts/Chakra_Petch/ChakraPetch-Regular.ttf);
+}
+/* Root */
+:root
+{
+    --main-color: #CBFE1C;
+    --light-color: #99A1AF;
+    --nav-color: #0B0E13;
+    --section-bg-light: #0F1625;
+    --section-bg-dark: #171310;
+    --contact-us-cards: #1E2939;
+    --bg-contact-us: #0D121A;
+    --what-we-do-cards: #1A1A1A;
+}
+/* Enhancement */
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: "Chakra Petch", sans-serif;
+}
+h1 , h2 , h3 , h4 , h5 , h6
+{
+    font-family: "Days One", sans-serif;
+}
+a , span
+{
+    display: inline-block;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+    text-transform: capitalize;
+}
+.w-80
+{
+    width: 80%;
+}
+.w-35
+{
+    width: 2.1875rem;
+}
+.h-35
+{
+    height: 2.1875rem;
+}
+.py-96
+{
+    padding-block: 6rem;
+}
+.pt-128
+{
+    padding-top: 8rem;
+}
+.pt-152
+{
+    padding-top: 9.5rem;
+}
+.pb-64
+{
+    padding-bottom: 4rem;
+}
+.rounded-20
+{
+    border-radius: 20px;
+}
+/* Start Fonts Size */
+
+.fs-60
+{
+    font-size: 3.75rem;
+}
+.fs-48
+{
+    font-size: 3rem;
+}
+.fs-24
+{
+    font-size: 1.5rem;
+}
+.fs-20
+{
+    font-size: 1.25rem;
+}
+.fs-18
+{
+    font-size: 1.125rem;
+}
+
+/* End Fonts Size */
+/* Start Line Height */
+.line-height-75
+{
+    line-height: 4.6875rem;
+}
+.line-height-48
+{
+    line-height: 3rem;
+}
+.line-height-26
+{
+    line-height: 1.625rem;
+}
+/* End Line Height */
+/* Start Theme */
+
+.fg-main-color
+{
+    color: var(--main-color);
+}
+.fg-light-color
+{
+    color: var(--light-color);
+}
+.bg-main-color
+{
+    background-color: var(--main-color);
+}
+.bg-nav-color
+{
+    background-color: var(--nav-color);
+}
+.bg-contact-us-card
+{
+    background-color: var(--contact-us-cards);
+}
+.bg-what-we-do-cards
+{
+    background-color: var(--what-we-do-cards);
+}
+.bg-contact-us-form
+{
+    background-color: #364153;
+    border-color: rgba(98, 101, 107, 0.7);
+}
+.bg-contact-us
+{
+    background-color: var(--bg-contact-us);
+}
+.section-bg-dark
+{
+    background-color: var(--section-bg-dark);
+}
+.section-bg-light
+{
+    background-color: var(--section-bg-light);
+}
+
+/* End Theme */
+
+/* End Genaral Style */
+
+/* Start Header Section */
+
+/* Start NavBar */
+
+.navbar-nav .nav-item .nav-link.active
+{
+    color: var(--main-color);
+}
+.main-header .nav-link , .navbar i 
+{
+    transition: color 0.5s ease;
+}
+.main-header .nav-link:hover , .navbar i:hover
+{
+    color: var(--main-color);
+}
+.right-nav button.sign-in
+{
+    background-color: var(--main-color);
+    transition: background-position 0.3s ease-in-out , background-color 0.3s;
+}
+.right-nav button.sign-in:hover
+{
+    background-color: #A4CE1A;
+    background-image: linear-gradient( 120deg, transparent 30%, rgba(255, 255, 255, 0.7) 50%, transparent 70%);
+    background-size: 500% 100%;
+    background-position: -100% 0;
+}
+@media screen and (max-width:1023px)
+{
+    nav button.sign-in
+    {
+        width: 100%;
+        margin-top: 1.25rem;
+    }       
+}
+@media screen and (min-width:1024px)
+{
+    nav .notification , nav .message
+    {
+        display: none;
+    }      
+}
+
+/* End NavBar */
+
+/* Start Header Content */
+
+header.main-header
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9) , rgba(0, 0, 0, 0.9)) , url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.main-header .hero-image img
+{
+  height: 26.25rem;
+  border-radius: .9375rem;
+  object-fit: cover;
+  object-position: center;
+  border-color: var(--main-color);
+}
+.header-content button.btn1
+{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    transition: background-position 0.5s ease-in-out , background-color 0.3s;
+}
+.header-content button.btn1:hover
+{
+    background-color: #A6CC17;
+    background-image: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.7) 50%, transparent 70%);
+    background-size: 500% 100%;
+    background-position: -100% 0;
+}
+.header-content button.btn2
+{
+    background-color: transparent;
+    border-color: var(--main-color);
+    transition: color 0.3s , background-color 0.3s , background-position 0.5s ease-in-out;
+}
+.header-content button.btn2:hover
+{
+    color: black;
+    background-color: var(--main-color);
+    background-image: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.7) 50%, transparent 70%);
+    background-size: 500% 100%;
+    background-position: -100% 0;
+}
+.header-content .active-players
+{
+    border-color: #364153;
+    bottom: -6%;
+    left: -4%;
+}
+@media screen and (min-width:1024px) {
+
+    .header-content .header-btns
+{
+    grid-template-areas: 
+    "x y . . . . . . . .";
+}
+    
+}
+
+/* End Header Content */
+
+/* End Header Section */
+
+/* Start Our Games Section */
+
+.games-section header p::before
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 115%;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+.games-section header p::after
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 115%;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.games-section .carousel-item img
+{
+    height: 21.875rem;
+    object-fit: cover;
+    object-position: center;
+}
+.games-section .game-card-content
+{
+    inset: 0;
+    background-image: linear-gradient(to top, rgba(175, 198, 30, 0.9) 5%, transparent 50%);
+    border-color: var(--main-color);
+}
+.games-section .game-describe span
+{
+    padding: .25rem .75rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.games-section .game-card-content .game-describe
+{
+    top: -20%;
+    transition: top 0.2s ease-in-out;
+}
+.games-section .game-card-content p
+{
+    bottom: -20%;
+    transition: bottom 0.2s ease-in-out;
+}
+.games-section .game-card-holder img
+{
+    transition: transform 0.4s ease;
+}
+.games-section .game-card-content
+{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.games-section .game-card-content:hover
+{
+    opacity: 1;
+}
+.games-section .game-card-holder:hover img
+{
+    transform: scale(1.15);
+}
+.games-section .game-card-content:hover .game-describe
+{
+    top: 0%;
+}
+.games-section .game-card-content:hover p
+{
+    bottom: 0%;
+}
+.games-section button.btn-icon
+{
+    border-color: rgba(153, 161, 175, 0.5);
+    transition: border-color 0.3s ease;
+}
+.games-section button.btn-icon i
+{
+    transition: border-color 0.3s ease;   
+}
+.games-section button.btn-icon:hover i
+{
+        color: var(--main-color);
+}
+.games-section button.btn-icon:hover
+{
+    border-color: var(--main-color);
+}
+.games-section button.games-btn
+{
+    border-color: var(--main-color);
+    transition: all 0.3s ease;
+}
+.games-section button.games-btn:hover
+{
+    background: var(--main-color);
+    color: black;
+}
+/* End Our Games Section */
+
+/* Start What We Do Section */
+
+.what-we-do-section header p::before
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 115%;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+.what-we-do-section header p::after
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 115%;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.what-we-do-section .action
+{
+    border-color: #1E2939;
+    transition: all 0.5s ease;
+}
+.what-we-do-section .action:hover 
+{
+    border-color: var(--main-color);
+}
+.what-we-do-section .action:hover .action-item
+{
+    color: black;
+    background-color: var(--main-color);
+}
+.what-we-do-section .span-top .fa-play
+{
+    transform: rotate(211deg);
+    top: -12%;
+    left: -8%;
+    transition: all 0.5s ease;
+}
+.what-we-do-section .action:hover .span-top .fa-play
+{
+    top: 8%;
+    left: 4%;
+}
+.what-we-do-section .span-bottom .fa-play
+{
+    transform: rotate(28deg);
+    bottom: -12%;
+    right: -8%;
+    transition: all 0.5s ease;
+}
+.what-we-do-section .action:hover .span-bottom .fa-play
+{
+    bottom: 8%;
+    right: 4%;
+}
+.h-270
+{
+    height: 15rem;
+    object-position: center;
+}
+
+/* End What We Do Section */
+
+/* Start Sponsers Section */
+
+.sponsers-section
+{
+    background-image: radial-gradient(#A1CA1A, transparent 60%);
+    padding-top: 8.125rem;
+    padding-bottom: 6rem;
+}
+.sponsers-section::before
+{
+    content: "";
+    width: 34.375rem;
+    height: .1875rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), #CBFE1C 50%, rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 .625rem 0 rgba(203, 254, 28, 0.2);
+}
+.sponsers-section .logo-item img
+{
+    object-fit: cover;
+    object-position: center;
+}
+.sponsers-section .logo-first-row
+{
+    animation-name: moveToLeft;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.sponsers-section .logo-last-row
+{
+    animation-name: moveToRight;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes moveToLeft
+{
+    0%
+    {
+        transform: translateX(0);
+    }    
+    100%
+    {
+        transform: translateX(-50%);
+    }    
+}
+@keyframes moveToRight
+{
+    0%
+    {
+        transform: translateX(-50%);
+    }    
+    100%
+    {
+        transform: translateX(0);
+    }    
+}
+
+/* End Sponsers Section */
+
+/* Start Our Team Section */
+
+.our-team-section header p:first-child::before
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 115%;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+.our-team-section header p:first-child::after
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 115%;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.our-team-section .our-team-content .rotate 
+{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    bottom: 15%; 
+}
+.our-team-section .our-team-content
+{
+     background-image: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 50%);
+}
+.our-team-section .img-holder::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(100%);
+    transition: height 0.5s ease-in-out;
+}
+.our-team-section .avatar1 .main-color
+{
+    transition: color 0.5s ease;
+}
+.our-team-section .avatar1:hover .main-color
+{
+    color: var(--main-color);
+}
+.our-team-section .avatar1:hover .img-holder::after
+{
+    height: 0;
+}
+
+/* End Our Team Section */
+
+/* Strat Contact Us Section */
+
+.contact-us-section header p:first-child::before
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 115%;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+.contact-us-section header p:first-child::after
+{
+    content: "";
+    width: 100%;
+    border: var(--main-color) solid .125rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 115%;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.w-96
+{
+    width: 6rem;
+}
+.w-64
+{
+    width: 4rem;
+}
+.w-56
+{
+    width: 3.5rem;
+}
+.w-42
+{
+    width: 2.625rem;
+}
+.h-96
+{
+    height: 6rem;
+}
+.h-64
+{
+    height: 4rem;
+}
+.h-56
+{
+    height: 3.5rem;
+}
+.h-42
+{
+    height: 2.625rem;
+}
+.contact-us-section .contact-community
+{
+    background-image: linear-gradient(to right, #C5FD27 20%, #30E16F 70%);
+}
+.contact-us-section .contact-community
+{
+    transition: opacity 0.5s ease;
+}
+.contact-us-section .contact-community li:hover
+{
+    opacity: 0.7;
+}
+.content-box
+{
+    box-sizing: content-box;
+}
+textarea
+{
+    resize: none;
+}
+.contact-us-section button
+{
+    transition: background-position 0.5s ease , background-color 0.3s;
+}
+.contact-us-section button:hover
+{
+    background-color: #A5CF20;
+    background-image: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.7) 50%,transparent 70%);
+    background-size: 500% 100%;
+    background-position: -100% 0;
+}
+.contact-us-section .message-btn::after
+{
+    content: "";
+    width: 100%;
+    border: .0625rem rgba(54, 65, 83, 0.7) solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* End Contact Us Section */
+
+/* Start Footer Section */
+footer .footer-content::after
+{
+    content: "";
+    width: 100%;
+    border: .0625rem rgb(30, 41, 57, 0.9) solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer.footer-section li a
+{
+    transition: color 0.3s ease;
+}
+footer.footer-section li a:hover
+{
+    color: var(--main-color);
+}
+
+/* End Footer Section */
